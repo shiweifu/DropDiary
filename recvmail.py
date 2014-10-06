@@ -108,7 +108,8 @@ def main():
 
   content = parse_msg(msg).split("\r\n\r\n")[0]
 
-  print("content:\n%s\n\n" % content)
+  print("recv content")
+
   server.dele(len(mails))
   server.quit()
 
