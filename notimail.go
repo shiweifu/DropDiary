@@ -21,8 +21,8 @@ var Config map[string]string
 // func SendMail(subject, content string, tos []string) error {
 func SendMail(msg Message) error {
 
-	message := `From: ` + Config["from_info"] +
-		`To: ` + Config["to_email"] + `
+	message := `From: ` + Config["from_email"] + `
+To: ` + Config["to_email"] + `
 Subject: ` + msg.subject + `
 Content-Type: text/html;charset=UTF-8
 
